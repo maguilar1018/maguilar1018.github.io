@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name=author content="Max and Vivian">
+    <title>TaskMin</title>
+</head>
+<body>
+        <h1>TaskMin</h1>
+        <a id="back" href="../programming.html">Back to Programs</a>
+<article>
+    <nav>
+        <ul>
+            <li><button class="dropBtn" type="button">Add task</button>
+                <div class="dropClickContent">
+                    <form class = "addTaskForm">
+                        <h1>Add Task Form</h1>
+                        <p><label for="text">Description</label></p>
+                        <textarea id="text" name="text" rows=5 cols=20></textarea>
+                        <p>
+                            <label>Priority
+                                <select name="priority">
+                                    <option>low</option>
+                                    <option selected>medium</option>
+                                    <option>high</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p><label>Due Date</label></p>
+                            <input type="text" id="datepicker" name="duedate">
+                        <h2 id ="taskTags">task tags</h2>
+                        <div class="dynamic-tags"></div>
+                        <button id="addTaskFormButton" type="button" value="add">Add</button>
+                        <button id = "cancelTaskFormButton" type="button" value="cancel">Cancel</button>
+
+                    </form>
+                </div>
+            </li>
+            <li> <button type= "button" class="dropBtn">Sort</button>
+                <div class="dropClickContent">
+                    <form class = "sortForm">
+                        <button id="sortIdFormButton" type="button" value="id">By TaskID</button>
+                        <button id = "sortDateFormButton" type="button" value="date">By Due date</button>
+                        <button id = "sortPriorityFormButton" type="button" value="priority">By Priority</button>
+                        <button id = "sortTagFormButton" type="button" value="tag">By Tag</button>
+                    </form>
+                </div>
+            </li>
+            <li>
+                <button type= "button" class="dropBtn">Local</button>
+                <div class="dropClickContent">
+                    <form class = "localBottons">
+                        <button id="localLoad" type="button" value="load">Load Tasks</button>
+                        <button id = "localSave" type="button" value="save">Save Tasks</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    
+    </nav>
+
+    <h1>Current Tasks</h1>
+
+    <ul class="mainList">
+        <!-- <li>
+            <span class="duedate">5/5/2019</span>
+            <span class="priority">high</span>
+            <span class="tag">work</span>
+            <p class="text">Finish taskmin project</p>
+
+            <button type="button" class="done">&#x2714;</button>
+            <button type="button" class="delete">&#x2716;</button>  
+
+        </li> -->
+    </ul>
+
+</article>
+
+<!-- JavaScript at the bottom -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cs.wellesley.edu/~anderson/js/bounds/bounds-plugin.js"></script>
+<script src="dropdown.js"></script>
+<script src="dynamic-tags.js"></script>
+<script src="Task.js"></script>
+<script src="TaskList.js"></script>
+<script src="main.js"></script>
+<script src="https://cs.wellesley.edu/~cs204/assignments/project/example.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>$("#datepicker").datepicker();</script>
+<script>updateTags();</script>
+</body>
+</html>

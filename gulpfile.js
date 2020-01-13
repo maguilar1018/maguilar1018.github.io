@@ -16,6 +16,16 @@ const uglify = require("gulp-uglify");
 // Load package.json for banner
 const pkg = require('./package.json');
 
+//carousel
+$('.carousel-item').on('click', function (elt) {
+  $(elt).addClass('enlarged');
+})
+// Array.prototype.forEach.call(document.querySelector("#carouselExampleIndicators"), function (elt) {
+//   elem.addEventListener("click", function () {
+//       elt.classList.toggle("enlarged");
+//   });
+// });
+
 // Set the banner content
 const banner = ['/*!\n',
   ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',

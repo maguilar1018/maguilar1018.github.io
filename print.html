@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Maxine Aguilar">
+
+  <title>Maxine Aguilar</title>
+
+  <!--Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body id="page-top" style="background-color: #0088cc;">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="index.html">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="resume.html">Resume</a>
+      </li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="container text-center my-auto">
+      <br>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+
+        <div id="pslide1" class="carousel-item active">
+          <img src="img/Davis mock event banner.jpg" style="max-width: 850px; max-height: 550px;">
+        </div>
+        <div id="pslide2" class="carousel-item">
+          <img src="img/yari compcard.jpg" style="max-width: 300px; max-height: 550px;">
+        </div>
+        <div id="pslide3" class="carousel-item">
+          <img src="img/lesbian agenda.jpg" style="max-width: 350px; max-height: 550px;">
+        </div>
+        <div id="pslide4" class="carousel-item">
+          <img src="img/costume party.jpg" style="max-width: 350px; max-height: 550px;">
+        </div>
+        <div id="pslide5" class="carousel-item">
+          <img src="img/radioshow1920.jpg" style="max-width: 450px; max-height: 550px;">
+        </div>
+        <div id="pslide6" class="carousel-item">
+          <img src="img/hotgirl_hoedown.jpg" style="max-width: 350px; max-height: 550px;">
+        </div>
+        <div id="pslide7" class="carousel-item">
+          <img src="img/afrovibe spam.jpg" style="max-width: 350px; max-height: 550px;">
+        </div>
+        <div id="pslide8" class="carousel-item">
+          <img src="img/tunnel map v1.2.jpg" style="max-width: 600px; max-height: 550px;">
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  </header>
+  <a id="back" href="portfolio.html">Back to Portfolio</a>
+
+  <h2 style="text-align: center;">Background</h2>
+  <div class="carousel-caption2"></div>
+
+  <script>
+    window.setInterval(function(){
+      if($("#pslide1").hasClass("carousel-item active")){
+        $('.carousel-caption2').empty();
+        $('.carousel-caption2').text('This mock flyer was created to be displayed as a Facebook banner. The information communicated is not real but an example of how I prioritize event details. Red and White are the logo colors for the Davis Museum. The fine print text is required of all Wellesley flyers to provide contact information for accessibility at the event.');
+      }else if($("#pslide2").hasClass("carousel-item active")){
+        $('.carousel-caption2').empty();
+        $('.carousel-caption2').text('Each photo in this “Comp Card” was photographed and edited by me in Lightroom and composed in Photoshop. The dimensions (8.5” x 5.5”) and included information follow a standard for modelling comp cards. After considering various compositions and images, I landed on this final layout for the variety in the model’s expression and posing. The diagonal synchronicity in the posing direction also appeared more dynamic and communicates the model’s ability to pose with either side of her body.');
+      }else if($("#pslide3").hasClass("carousel-item active")){
+        $('.carousel-caption2').empty();
+        $('.carousel-caption2').text('This piece “The Lesbian Agenda” grew from a propaganda assignment in my Digital Imaging course this semester. Although displayed in a digital format here, I created an emulsion screen print and cast the image onto red Canson paper originally. After receiving positive feedback from my peers I decided to sell prints using a larger variety of colors and will soon expand to selling t-shirts of the design.');
+      }else if($("#pslide4").hasClass("carousel-item active")){
+        $('.carousel-caption2').empty();
+        $('.carousel-caption2').text('This is one example of the various flyers I created this semester for student events. The flashy design and neon colors are meant to entice excitement. As a party design this was only meant for mobile display and was paired with a Facebook event.');
+      }else if($("#pslide5").hasClass("carousel-item active")){
+        $('.carousel-caption2').empty();
+        $('.carousel-caption2').text('This mobile flyer is a promotional for my radio show. It utilizes my first digitally drawn portrait to dramatize the subject, the DJ. I varied the typeface and font size to prioritize information like the name and time of the show while effectively communicating smaller details.');
+      }else if($("#pslide6").hasClass("carousel-item active")){
+        $('.carousel-caption2').empty();
+        $('.carousel-caption2').text('I was commissioned to create this flyer for a student organizations’ on campus party. They provided the “Hotgirl Hoedown” title so I used images of two key musical artists Megan Thee Stallion and Lil Nas X. Megan Thee Stallion coined the term “hot girl” and Lil Nas X’s single Old Town Road (the horses are borrowed from the single cover art) launched a pop culture fascination of western aesthetics. A younger audience, the event’s sole target,  would connect the Lil Nas horses and Megan to the clever title. I added the blurred text to protect students’ identity on this site. Again, the fine print text is required of all Wellesley flyers to provide contact information for accessibility at the event.');  
+      }else if($("#pslide7").hasClass("carousel-item active")){
+        $('.carousel-caption2').empty();
+        $('.carousel-caption2').text('Created for Wellesley’s French Department, this flyer underwent a few versions and served as my first experience creating publicity content for an organization I wasn’t part of. Since the flyer was not paired with an online event sign up, many details were included. I used different methods to prioritize information: including font weight, shadow, font color, and shapes. My favorite aspect of the flyer is the workshop leader’s figure, her leaping pose brings movement to the composition. This final product was printed for posters and projected on screens across campus.');
+      }else if($("#pslide8").hasClass("carousel-item active")){
+        $('.carousel-caption2').empty();
+        $('.carousel-caption2').text('As my only mapping project “Tunnels of Wellesley” was created as a detailed and comprehensive map of Wellesley’s underground passage-ways. By cross referencing a geographically accurate map of Wellesley with my sketches of the tunnel paths, I created the outline for the map.');
+    }})
+  </script>
+  
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/maguilar1018/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/madeupmaxx">
+            <i class="icon-social-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Aguilar 2019</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!--core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts-->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+</html>

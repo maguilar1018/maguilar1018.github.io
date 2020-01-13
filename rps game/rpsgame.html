@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="rpsgame.css">
+    <meta name=author content="Your name here">
+    <title>Sunny and Maxine Assignment 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<article class="fullPage">
+    <h1>Rock Paper Scissors: Game On!</h1>
+    <section id="playerthrow">
+    <h2>Player Throw</h2>
+    <img class="paperImg" src="images/paper-200.png" alt="paperimage" >
+    <img class="rockImg" src="images/rock-200.png" alt="rockimage" >
+    <img class="scissorsImg" src="images/scissors-200.png" alt="scissorsimage" >
+    <p>Click on the image of your throw</p>
+    </section>
+
+    <section id="computerthrow">
+    <h2>Computer Throw</h2>
+    <img id="computerImg" src="images/question-200.png" alt="computerAnswer" >
+    </section>
+
+    <section id="scoreboard">
+    <h2> Outcome </h2>
+    <p id="whoWins"></p>
+    <p>So far, you have won <span id= meWon> 0 </span> times, the computer has won <span id= compWon> 0 </span> times, and there
+    have been <span id= numTies> 0 </span> ties.
+    </p>
+    <p><button id="startOverButton" style="width:150px;height:20px;" 
+    > Start Over </button></p>
+    <a id="back" href="../programming.html">Back to Programs</a>
+    </section>
+
+
+</article>
+
+<script src="rpsgame.js"></script>
+</body>
+</html>

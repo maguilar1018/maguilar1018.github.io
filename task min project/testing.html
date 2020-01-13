@@ -1,0 +1,161 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <meta name=author content="Your name here"> -->
+    <title>title here</title>
+    <style>
+/* mostly following W3 schools for these styles */
+
+/* .dropBtn {
+    background-color: #3498db;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+} */
+
+/* .dropBtn:hover, .dropBtn:focus {
+    background-color: #2980B9;
+} */
+
+nav > ul > li {
+    position: relative;
+    display: inline-block;
+}
+
+.dropContent, .dropClickContent {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.show {
+    display: block;
+}
+
+    </style>
+
+</head>
+<body>
+
+<article>
+    <h1>Drop Menu</h1>
+
+<p>The following uses the style of drop-down from W3
+Schools <a target="_blank" href="https://www.w3schools.com/howto/howto_js_dropdown.asp">JavaScript
+Dropdown</a>.
+
+<nav>
+    <ul>
+        <li><button class="dropBtn" type="button">Animals</button>
+            <ul class="dropContent">
+                <li><a target="_blank" href="https://www.google.com/search?q=lions">lions</a></li>
+                <li><a target="_blank" href="https://www.google.com/search?q=tigers">tigers</a></li>
+                <li><a target="_blank" href="https://www.google.com/search?q=bears">bears</a></li>
+            </ul>
+        </li>
+        
+        <li><button class="dropBtn" type="button">Brave</button>
+            <ul class="dropContent">
+                <li><button id="btnHarry" type="button">Harry</button></li>
+                <li><button id="btnRon" type="button">Ron</button></li>
+                <li><button id="btnHermione" type="button">Hermione</button></li>
+            </ul>
+        </li>
+
+        <li><button class="dropBtn" type="button">Form</button>
+            <div class="dropClickContent">
+                <form>
+                    <p><label>What is your name?
+                            <input type="text" name="name"></label></p>
+                    <p><label for="quest">What is your quest?</label></p>
+                    <textarea id="quest" name="quest" rows=5 cols=60></textarea>
+                    <p>
+                    <label>What is your favorite color?
+                        <select name="color">
+                            <option>blue</option>
+                            <option>yellow</option>
+                        </select>
+                    </label></p>
+                </form>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+</article>
+
+<footer>
+<ul class="validation_icons">
+    <li><a href="//validator.w3.org/check?uri=referer"><img 
+       src="//cs.wellesley.edu/~cs204/Icons/valid-html5v2.png"
+       alt="Valid HTML 5"
+       title="Valid HTML 5"  
+       height="31" width="88"/></a></li>
+
+<li><a href="//jigsaw.w3.org/css-validator/check/referer"><img 
+      style="border:0;width:88px;height:31px"
+      src="//cs.wellesley.edu/~cs204/Icons/vcss.gif"
+      alt="Valid CSS!"/></a></li>
+</ul>
+</footer>
+<!-- JavaScript at the bottom -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cs.wellesley.edu/~anderson/js/bounds/bounds-plugin.js"></script>
+<script>
+$("#btnHarry").one().click(function () {
+     console.log("you clicked on Harry");
+});
+$("#btnRon").one().click(function () {
+     console.log("you clicked on Ron");
+});
+$("#btnHermione").one().click(function () {
+     console.log("you clicked on Hermione");
+});
+
+// ================================================================
+// drop-down stuff
+// Modified for .dropClickContent
+
+$("nav").on('click',".dropBtn",function (evt) {
+    console.log("clicked on "+$(evt.target).text());
+    var sib = $(evt.target).next().one();
+    var shown = sib.hasClass('show');
+    closeAllDropDowns();
+    // open our dropdown, if not shown
+    if(!shown) {
+        sib.addClass('show');
+    }
+});
+
+
+function closeAllDropDowns() {
+    console.log("closing all dropdowns");
+    $(".dropContent,.dropClickContent").removeClass('show');
+}
+
+// This closes all drop-downs if you click anywhere outside the dropContent
+// Same effect as W3 Schools, but uses jQuery for brevity
+// Also checks that we are not in a dropClickContent element
+
+$(window).click(function (evt) { 
+    var dcc = $(evt.target).closest(".dropClickContent");
+    var inDcc = (dcc.length === 1);
+    if (!evt.target.matches('.dropBtn') &&
+        !inDcc) {
+       closeAllDropDowns();
+    }
+});
+</script>
+
+</body>
+</html>

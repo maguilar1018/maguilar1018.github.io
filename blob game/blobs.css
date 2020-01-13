@@ -1,0 +1,21 @@
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+body {
+    overflow: hidden;
+    text-align: center;
+}
+#instructions {
+    display: inline-block;
+    text-align: left;
+}
+#resultcontainer {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    z-index: 10;
+    text-align: center;
+}

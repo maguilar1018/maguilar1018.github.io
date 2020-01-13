@@ -1,0 +1,6 @@
+.fullPage {
+    padding: 2em;
+}
+.rockImg, .paperImg, .scissorsImg {
+    border: white solid 2px;
+}

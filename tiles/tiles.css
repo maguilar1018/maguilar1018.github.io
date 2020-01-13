@@ -1,0 +1,84 @@
+/* Made by Maxine and Jennifer  */
+
+.tiles {
+    position: relative;
+    left: 50em;
+
+}
+
+#data-a {
+    position: absolute;
+    top: 20px; 
+    left: -200px;
+}
+#data-b {
+    position: absolute;
+    top: 20px; 
+    left: 0px;
+}
+#data-c {
+    position: absolute;
+    top: 20px; 
+    left: 200px;
+}
+
+#data-d {
+    position: absolute;
+    top: 220px; 
+    left: -200px;
+}
+#data-e {
+    position: absolute;
+    top: 220px; 
+    left: 0px;
+}
+#data-f {
+    position: absolute;
+    top: 220px; 
+    left: 200px;
+}
+#data-g {
+    position: absolute;
+    top: 420px; 
+    left: -200px;
+}
+#data-h {
+    position: absolute;
+    top: 420px; 
+    left: 0px;
+}
+
+#up {
+    position: relative; 
+    left: 15em;
+    top: 15em;
+}
+
+#down {
+    position: relative; 
+    left: 15em;
+    top: 20em;
+}
+
+#left {
+    position: relative; 
+    left: 9em;
+    top: 14em;
+}
+
+#right {
+    position: relative; 
+    left: 22em;
+    top: 12em;
+}
+
+.flex-validation {
+    position: relative; 
+    top: 50em; 
+}
+
+body {
+    padding: 2em;
+
+}
+
