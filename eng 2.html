@@ -59,22 +59,27 @@
   <section class="content-section bg-light" id="about" >
     <div class="container text-center">
       <div class="row">
-        <div class="col-lg-10 mx-auto">
+        <div class="engcontainer col-lg-10 mx-auto">
           <!-- <h2>Robotic Arm Component</h2><br> -->
-          <video class="eng1" src= "img/EECS vid.mp4" type=video/mp4 width="500" controls loop></video>
-          <figure class="eng1">
-            <img src="img/sensor pic.jpg" width="500">
-            <figcaption>Figure 1. Moxbotix Ultrasonic Sensor attached to seat tube and facing behind rider's view.</figcaption>
-          </figure>
-          <figure class="eng1">
-            <img src="img/speaker.jpg" width="500">
-            <figcaption>Figure 2. Speaker, attached to front of top tube, and LED alerts, attached to bike stem.</figcaption>
-          </figure>
+          <div class="eng1">
+              <video class="eng1" src= "img/EECS vid.mp4" type=video/mp4 width="300" controls loop></video>
+              <figure class="eng1">
+                <img src="img/sensor pic.jpg" width="300">
+                <figcaption>Figure 1. Moxbotix Ultrasonic Sensor attached to seat tube and facing behind rider's view.</figcaption>
+              </figure>
+              <figure class="eng1">
+                <img src="img/speaker.jpg" width="300">
+                <figcaption>Figure 2. Speaker, attached to front of top tube, and LED alerts, attached to bike stem.</figcaption>
+              </figure>
+          </div>
+          
+          <div class="engtext">
           <h3>Abstract</h3>
           <p align="left" class="lead mb-5">For Maxine’s final MOSTEC (MIT Online Science Technology Engineering Community) project, she decided to tackle a project facing many cyclists. While cycling in a busy urban environment, it is difficult to be aware of upcoming obstacles and rear approaching cars simultaneously. The car detecting cycling device provides an audio and visual alert when a car is approaching.
           <h3>Design</h3>
           <p align="left" class="lead mb-5">An ultrasonic sensor, see figure 1, constantly runs to detect an obstruction within 12 feet. If the obstruction is between 12 and 6 feet the audio alert “car approaching” is amplified through the speaker and the white LED is illuminated. Once the obstruction reach 6 feet or less from the rear of the bike, “car back” is amplified and the red LED is illuminated. The audio alerts were recordings of Maxine’s voice because python’s eSpeak proved hard to understand. The reason for the two levels of alert is to prepare the cyclist. Once a car begins approaching the cyclist it may turn away or continue to pass. Either way, the cyclist can prepare to proceed with caution.</p>
           <p align="left" class="lead mb-5">With the help of Maxine’s MIT EECS (electrical engineering,computer science) summer course, she assembled the device with Raspberry Pi GPIO pins and python programming. Other electrical components of the project: moxbotic ultrasonic sensor, analog to digital chip, audio amplifier, two LEDs, and speaker. The final product was a successful proof of concept and prototype.</p>
+          </div>
         </div>
       </div>
 
