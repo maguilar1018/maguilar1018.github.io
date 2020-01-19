@@ -2,70 +2,62 @@
  * Start Bootstrap - Stylish Portfolio v5.0.7 (https://startbootstrap.com/template-overviews/stylish-portfolio)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
- */body,html{width:100%;height:100%}
+ */
+ body,html{width:100%;height:100%}
  .carousel-item {
     height: 65vh;
-    min-height: 350px;
-    text-align: center;
+    /* max-height: 550px !important; */
   }
+  /* #slide1 {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%) !important;
+    max-height: 550px !important;
+    max-width: 550px !important;
+    width: auto !important;
+  } */
   #back {
     padding: 2em;
     margin-top: 2em;
   }
 
-  .enlarged {
+.enlarged {
     width: 400px;
     height: 300px;
-}
-.engImg {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-evenly + safe; */
-  align-items: flex-end;
-
 }
 .engcontainer{
   padding: 5px;
   /* max-width: 800px; */
   display: flex;
+  flex-direction: column;
+}
+@media all and (min-width: 768px){
+  .engcontainer{
+    flex-direction: row;
+    /* overflow: hidden; */
+  }
 }
 .eng1{
-  margin: 5px;
-  /* width: 200px; */
-  object-fit: contain;
-  align-self: flex-start;
+/* imgcontainer */
+  padding: 30px;
 }
 .engtext {
-  flex: 1 1 auto;
-  margin: 5px;
+/* textcontainer */
+  padding: 30px;
+}
+.engimg{
+  width: 400px;
+}
+@media only screen and (max-width: 768px){
+  .engimg{
+    width: 250px;
+    text-align: center;
+  }
 }
 
-/* .eng1 {
-  float: left;
-  margin: auto;
-  padding: 1em;
-  /* display: inline-block;
-  vertical-align: top;
-  width: 46%; */
-/* } */ 
-/* .engtext{
-  display: inline-block;
-  width: 46%;} */
-  /* @media (max-width: 620px){
-  width: 100%;
-  }  */
-  
-
-
-/* .carousel-caption{
-
-  position: absolute;
-  margin: 0 auto;
-  background-color: rgba(0,0,0,.3); 
-  top: 300px;
-  z-index: 10;
-
-} */
 .carousel-caption2 {
   max-width: 600px;
   margin: 0 auto;
