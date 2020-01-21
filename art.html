@@ -67,42 +67,42 @@
       </ol>
       <div class="carousel-inner" role="listbox">
 
-        <div class="carousel-item active" id="slide1" style="max-width: 540px ;max-height: 550px;">
+        <div class="carousel-item active" id="slide1" style="max-width: 540px ;max-height: 550px;" data-toggle="lightbox">
           <figure>
             <img class="center-block"src="img/weeping challices.jpg" alt='' >
           </figure>  
         </div>
-        <div id="slide2" class="carousel-item" style="max-width: 750px;max-height: 550px;">
+        <div id="slide2" class="carousel-item" style="max-width: 750px;max-height: 550px;" data-toggle="lightbox">
           <figure>
             <img class="center-block" src="img/body.jpg" alt="slide two">
           </figure>
         </div>
-        <div id="slide3" class="carousel-item" style="max-width: 412.5px; max-height: 550px;">
+        <div id="slide3" class="carousel-item" style="max-width: 412.5px; max-height: 550px;" data-toggle="lightbox">
           <figure>
             <img src="img/justin sin.jpg" alt="">
           </figure>
         </div>
-        <div id="slide4" class="carousel-item" style="max-width: 420px; max-height: 550px;">
+        <div id="slide4" class="carousel-item" style="max-width: 420px; max-height: 550px;" data-toggle="lightbox">
           <figure>
             <img src='img/y drawing.jpg'>
           </figure>
         </div>
-        <div id="slide5" class="carousel-item" style='max-width: 852.5px; max-height: 550px;'>
+        <div id="slide5" class="carousel-item" style='max-width: 852.5px; max-height: 550px;' data-toggle="lightbox">
           <figure>
             <img src="img/nana.jpg">
           </figure>  
         </div>
-        <div id="slide6" class="carousel-item" style='max-width: 400px; max-height: 550px;'>
+        <div id="slide6" class="carousel-item" style='max-width: 400px; max-height: 550px;' data-toggle="lightbox">
           <figure>
             <img src='img/nymph1.jpg'>
           </figure>
         </div>
-        <div id="slide7" class="carousel-item" style="max-width: 852.5px; max-height: 550px;">
+        <div id="slide7" class="carousel-item" style="max-width: 852.5px; max-height: 550px;" data-toggle="lightbox">
           <figure>
             <img src="img/7maggie.jpg">
           </figure>
         </div>
-        <div id="slide8" class="carousel-item" style="max-width: 440px; max-height: 550px;">
+        <div id="slide8" class="carousel-item" style="max-width: 440px; max-height: 550px;" data-toggle="lightbox">
           <figure>
             <img src="img/mx port2.jpg">
           </figure>
@@ -125,6 +125,10 @@
   <div style="padding-top: 2rem;" class="carousel-caption1"></div>
 
 <script>
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
   window.setInterval(function(){
     if($("#slide1").hasClass("carousel-item active")){
       //weeping challices
