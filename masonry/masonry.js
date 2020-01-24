@@ -39,7 +39,7 @@ window.addEventListener('resize', resizeAll);
 gallery.querySelectorAll('.gallery-item').forEach(function (item) {
     item.addEventListener('click', function () {        
         item.classList.toggle('full');
-        $('.gallery-item').append($title);
+        // $('.gallery-item').append($title);
 
     });
 });

@@ -3,6 +3,54 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
+ .gallery {
+  column-count: 3;
+  column-gap: 10px;
+  column-fill: initial;
+ }
+ .gallery .content {
+   margin-bottom: 10px;
+   display: inline-block !important;
+   vertical-align: top;
+ }
+ .content{
+   max-height: 100%;
+   width: 100%;
+ }
+ .gallery img {
+  transition: all .5s ease-in-out;
+  backface-visibility: hidden; /* Remove Image flickering on hover */
+}
+ .gallery img :hover {
+  opacity: .75
+ }
+ .full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* max-width: 100%; */
+  max-height: 100%;
+  z-index: 1;
+ }
+
+
+ /* Masonry on tablets */
+@media only screen and (max-width:768px){
+  .gallery{
+    column-count: 1;
+  }
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+ /* .content{
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100% !important;
+ } */
  body,html{width:100%;height:100%}
  .carousel-item {
     height: 65vh;
