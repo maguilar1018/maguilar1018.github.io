@@ -53,41 +53,39 @@
   <a id="back" href="portfolio.html">Back to Portfolio</a>
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-      </ol>
       <div class="carousel-inner" role="listbox">
 
-        <div id="pslide1" class="carousel-item active" style="max-width: 800px; max-height: 550px;">
-          <img src="img/Davis mock event banner.jpg" >
+        <div id="pslide1" class="carousel-item active">
+         <!-- style="max-width: 800px; max-height: 550px;"> -->
+          <img id="fslide1" src="img/Davis mock event banner.jpg" >
         </div>
-        <div id="pslide2" class="carousel-item" style="max-width: 290px; max-height: 550px;">
-          <img src="img/yari compcard.jpg">
+        <div id="pslide2" class="carousel-item">
+         <!-- style="max-width: 290px; max-height: 550px;"> -->
+          <img id="fslide2"src="img/yari compcard.jpg">
         </div>
-        <div id="pslide3" class="carousel-item" style="max-width: 350px; max-height: 550px;">
-          <img src="img/lesbian agenda.jpg">
+        <div id="pslide3" class="carousel-item">
+           <!-- style="max-width: 350px; max-height: 550px;"> -->
+          <img id="fslide3"src="img/lesbian agenda.jpg">
         </div>
-        <div id="pslide4" class="carousel-item" style="max-width: 345px; max-height: 550px;">
-          <img src="img/costume party.jpg">
+        <div id="pslide4" class="carousel-item">
+           <!-- style="max-width: 345px; max-height: 550px;"> -->
+          <img id="fslide4"src="img/costume party.jpg">
         </div>
-        <div id="pslide5" class="carousel-item" style="max-width: 450px; max-height: 550px;">
-          <img src="img/nikki.jpg">
+        <div id="pslide5" class="carousel-item">
+           <!-- style="max-width: 450px; max-height: 550px;"> -->
+          <img id="fslide5"src="img/nikki.jpg">
         </div>
-        <div id="pslide6" class="carousel-item" style="max-width: 345px; max-height: 550px;">
-          <img src="img/hotgirl_hoedown.jpg">
+        <div id="pslide6" class="carousel-item">
+           <!-- style="max-width: 345px; max-height: 550px;"> -->
+          <img id="fslide6"src="img/hotgirl_hoedown.jpg">
         </div>
-        <div id="pslide7" class="carousel-item" style="max-width: 345px; max-height: 550px;">
-          <img src="img/afrovibe spam.jpg">
+        <div id="pslide7" class="carousel-item">
+           <!-- style="max-width: 345px; max-height: 550px;"> -->
+          <img id="fslide7"src="img/afrovibe spam.jpg">
         </div>
-        <div id="pslide8" class="carousel-item" style="max-width: 560px; max-height: 550px;">
-          <img src="img/tunnel map v1.2.jpg">
+        <div id="pslide8" class="carousel-item">
+           <!-- style="max-width: 560px; max-height: 550px;"> -->
+          <img id="fslide8"src="img/tunnel map v1.2.jpg">
         </div>
       </div>
 
@@ -99,12 +97,66 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+      <p style="text-align: center;">(click image to enlarge)</p>
+    </div>
+    <div id="myModal1" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img02">
+      <!-- Modal Caption (Image Text) -->
+      <div class="caption"></div>
     </div>
   </header>
-
+<br>
   <h2 style="text-align: center;">Background</h2>
   <div class="carousel-caption2"></div>
+<script>
+    $('#fslide1').click(function(){
+    $('#myModal1').css('display','block');
+    $('#img02').attr("src", "img/Davis mock event banner.jpg");
+    $('.caption').text('"Davis Museum Banner" October 2019')
+ })
+ $('#fslide2').click(function(){
+    $('#myModal1').css('display','block');
+    $('#img02').attr("src", "img/yari compcard.jpg");
+    $('.caption').text('"Yahaira Comp Card" October 2019')
+ })
+ $('#fslide3').click(function(){
+    $('#myModal1').css('display','block');
+    $('#img02').attr("src", "img/lesbian agenda.jpg");
+    $('.caption').text('"Lesbian Agenda" November 2019')
+ })
+ $('#fslide4').click(function(){
+    $('#myModal1').css('display','block');
+    $('#img02').attr("src", "img/costume party.jpg");
+    $('.caption').text('"Costume Party Flyer" October 2019')
+ })
+ $('#fslide5').click(function(){
+    $('#myModal1').css('display','block');
+    $('#img02').attr("src", "img/nikki.jpg");
+    $('.caption').text('"Nicole 16" January 2020')
+ })
+ $('#fslide6').click(function(){
+    $('#myModal1').css('display','block');
+    $('#img02').attr("src", "img/hotgirl_hoedown.jpg");
+    $('.caption').text('"First Year Dance Flyer" September 2019')
+ })
+ $('#fslide7').click(function(){
+    $('#myModal1').css('display','block');
+    $('#img02').attr("src", "img/afrovibe spam.jpg");
+    $('.caption').text('"Afro Vibe Flyer" May 2019')
+ })
+ $('#fslide8').click(function(){
+    $('#myModal1').css('display','block');
+    $('#img02').attr("src", "img/tunnel map v1.2.jpg");
+    $('.caption').text('"Tunnel Map v1.2" January 2019')
+ })
 
+  $('.close').click(function(){
+    $('#myModal1').css('display','none');
+ })
+</script>
   <script>
     window.setInterval(function(){
       if($("#pslide1").hasClass("carousel-item active")){
