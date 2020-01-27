@@ -55,11 +55,13 @@
       <div class="gallery" id="gallery">
         <div id="content1"><img id="slide1" class="content img-fluid"src="img/weepingchallices.jpg" alt=""></div>
 
-        <div class="content1"><img id="slide2" class="content img-fluid"src="img/body.jpg" alt=""></div>
+        <div id="content1"><img id="slide9" class="content img-fluid"src="img/wormluv.jpg" alt=""></div>
 
         <div class="content1"><img id="slide3" class="content img-fluid"src="img/justinsin.jpg" alt=""></div>
 
         <div class="content1"><img id="slide4" class="content img-fluid"src="img/ydrawing.jpg" alt=""></div>
+
+        <div class="content1"><img id="slide2" class="content img-fluid"src="img/body.jpg" alt=""></div>
 
         <div class="content1"><img id="slide5" class="content img-fluid"src="img/nana.jpg" alt=""></div>
 
@@ -123,7 +125,11 @@
     $('#img01').attr("src", "img/mxport2.jpg");
     $('.caption').text('"Pink Self-Portrait" October 2019')
  })
-
+ $('#slide9').click(function(){
+    $('#myModal').css('display','block');
+    $('#img01').attr("src", "img/wormluv.jpg");
+    $('.caption').text('"Worm Love" October 2019')
+ })
   $('.close').click(function(){
     $('#myModal').css('display','none');
  })
