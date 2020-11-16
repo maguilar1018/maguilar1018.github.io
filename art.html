@@ -28,7 +28,7 @@
   <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
 </head>
 
-<body id="page-top" style="background-color: #00cc88;">
+<body id="page-top" style="background: linear-gradient(to right bottom, #00cc88, #fff200);">
 
   <!-- Navigation -->
   <a class="menu-toggle rounded" href="#">
@@ -54,19 +54,20 @@
   <header>
     <br>
     <a id="back" href="index.html">Back to Portfolio</a>
-
+    <div class="content-section-heading text-center">
+      <h2 class="mb-5">Animation</h2>
+    </div>
       <div class="gallery" id="gallery">
+        <div class="content1"><video id="slide1" class="content img-fluid"src="img/mxchainig3.mp4" type=video/mp4 controls loop alt=""></video></div>
+        <div class="content1"><img id="slide2" class="content img-fluid"src="img/lane.gif" alt=""></div>
+        <div class="content1"><img id="slide3" class="content img-fluid"src="img/mx-bday21.gif" alt=""></div>
+        <div class="content1"><img id="slide4" class="content img-fluid"src="img/y12.gif" alt=""></div>
         <div class="content1"><img id="slide5" class="content img-fluid"src="img/mx2.finalanim8.gif" alt=""></div>
         <div class="content1"><video id="slide6" class="content img-fluid"src="img/mxq1.a.mp4" type=video/mp4 controls loop alt=""></video></div>
-        <div id="content1"><img id="slide1" class="content img-fluid"src="img/weepingchallices.jpg" alt=""></div>
+        <div class="content1"><video id="slide7" class="content img-fluid"src="img/lagendavid.mp4" type=video/mp4 controls loop alt=""></video></div>
+        <!-- <div class="content1"><video id="slide8" class="content img-fluid"src="img/rona422 copy.mp4" type=video/mp4 controls loop alt=""></video></div> -->
+        <div class="content1"><video id="slide9" class="content img-fluid"src="img/tshirt mockup.mp4" type=video/mp4 controls loop alt=""></video></div>
 
-        <div id="content1"><img id="slide9" class="content img-fluid"src="img/wormluv.jpg" alt=""></div>
-        <div class="content1"><video id="slide8" class="content img-fluid"src="img/rona422 copy.mp4" type=video/mp4 controls loop alt=""></video></div>
-        <div class="content1"><img id="slide2" class="content img-fluid"src="img/thekissmx.jpg" alt=""></div>
-        <div class="content1"><img id="slide4" class="content img-fluid"src="img/hand drawn.jpg" alt=""></div>
-        <div class="content1"><img id="slide3" class="content img-fluid"src="img/nikki.jpg" alt=""></div>
-        <div class="content1"><img id="slide7" class="content img-fluid"src="img/surly yari.jpg" alt=""></div>
-        <div class="content1"><img id="slide8" class="content img-fluid"src="img/mxport2.jpg" alt=""></div>
 
       </div>  
 
@@ -84,23 +85,23 @@
 <script>
   $('#slide1').click(function(){
     $('#myModal').css('display','block');
-    $('#img01').attr("src", "img/weepingchallices.jpg");
-    $('.caption').text('"Weeping Chalices" November 2019')
+    $('#img01').attr("src", "img/mxchaindn.png");
+    $('.caption').text('"MX Chains Animated Promo" November 2020')
  })
  $('#slide2').click(function(){
     $('#myModal').css('display','block');
-    $('#img01').attr("src", "img/thekissmx.jpg");
-    $('.caption').text('"Gay, Black, Kiss" October 2019')
+    $('#img01').attr("src", "img/lane.gif");
+    $('.caption').text('"Lane Portrait Comission" September 2020')
  })
  $('#slide3').click(function(){
     $('#myModal').css('display','block');
-    $('#img01').attr("src", "img/nikki.jpg");
-    $('.caption').text('"Nicole turns Sixteen" January 2020')
+    $('#img01').attr("src", "img/mx-bday21.gif");
+    $('.caption').text('"Maxx is 21" October 2020')
  })
  $('#slide4').click(function(){
     $('#myModal').css('display','block');
-    $('#img01').attr("src", "img/hand drawn.jpg");
-    $('.caption').text('"Hand Study" April 2019')
+    $('#img01').attr("src", "img/y12.gif");
+    $('.caption').text('"Afriquena Logo Promo" June 2020')
  })
  $('#slide5').click(function(){
     $('#myModal').css('display','block');
@@ -114,8 +115,8 @@
  })
  $('#slide7').click(function(){
     $('#myModal').css('display','block');
-    $('#img01').attr("src", "img/surly yari.jpg");
-    $('.caption').text('"Surly" June 2019')
+    $('#img01').attr("src", "img/lagenda model.png");
+    $('.caption').text('"Lesbian Agenda Shirt Promo 2" April 2020')
  })
  $('#slide8').click(function(){
     $('#myModal').css('display','block');
@@ -124,9 +125,10 @@
  })
  $('#slide9').click(function(){
     $('#myModal').css('display','block');
-    $('#img01').attr("src", "img/wormluv.jpg");
-    $('.caption').text('"Worm Love" October 2019')
+    $('#img01').attr("src", "img/tshirt-mockup.gif");
+    $('.caption').text('"Lesbian Agenda Shirt Promo 1" February 2020')
  })
+
   $('.close').click(function(){
     $('#myModal').css('display','none');
  })

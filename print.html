@@ -24,7 +24,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body id="page-top" style="background-color: #0088cc;">
+<body id="page-top" style="background: linear-gradient(to right bottom, #0088cc, #fff200);">
 
   <!-- Navigation -->
   <a class="menu-toggle rounded" href="#">
@@ -47,148 +47,94 @@
     </ul>
   </nav>
 
-  <header>
-    <div class="container text-center my-auto">
-      <br>
-    </div>
-    <div class="overlay"></div>
-  </header>
   <a id="back" href="index.html">Back to Portfolio</a>
+  <div class="content-section-heading text-center">
+    <h2 class="mb-5">Promotional Graphics</h2>
+  </div>
   <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
+    <div class="gallery" id="gallery">
+      <div class="content1"><img id="fslide6" class="content img-fluid"src="img/mxchainig1.png" alt=""></div>
+      <div class="content1"><img id="fslide9" class="content img-fluid"src="img/mxchainig2.png" alt=""></div>
+      <div id="content1"><img id="fslide1" class="content img-fluid"src="img/blackout.gif" alt=""></div>
+      <!-- <div id="content1"><img id="fslide2" class="content img-fluid"src="img/yari compcard.jpg" alt=""></div> -->
 
-        <div id="pslide1" class="carousel-item active">
-         <!-- style="max-width: 800px; max-height: 550px;"> -->
-          <img id="fslide1" src="img/blackout.gif" >
-        </div>
-        <div id="pslide2" class="carousel-item">
-         <!-- style="max-width: 290px; max-height: 550px;"> -->
-          <img id="fslide2"src="img/yari compcard.jpg">
-        </div>
-        <div id="pslide3" class="carousel-item">
-           <!-- style="max-width: 350px; max-height: 550px;"> -->
-          <img id="fslide3"src="img/tshirt-mockup.gif">
-        </div>
-        <div id="pslide4" class="carousel-item">
-           <!-- style="max-width: 345px; max-height: 550px;"> -->
-          <img id="fslide4"src="img/costume party.jpg">
-        </div>
-        <div id="pslide5" class="carousel-item">
-           <!-- style="max-width: 450px; max-height: 550px;"> -->
-          <img id="fslide5"src="img/mixing.gif">
-        </div>
-        <div id="pslide6" class="carousel-item">
-           <!-- style="max-width: 345px; max-height: 550px;"> -->
-          <img id="fslide6"src="img/radioshow.jpg">
-        </div>
-        <div id="pslide7" class="carousel-item">
-           <!-- style="max-width: 345px; max-height: 550px;"> -->
-          <img id="fslide7"src="img/afrovibe spam.jpg">
-        </div>
-        <!-- <div id="pslide8" class="carousel-item">
-           style="max-width: 560px; max-height: 550px;">
-          <img id="fslide8"src="img/tunnel map v1.2.jpg">
-        </div> -->
-      </div>
+      <!-- <div id="content1"><img id="fslide3" class="content img-fluid"src="img/tshirt-mockup.gif" alt=""></div> -->
+      <div class="content1"><img id="fslide4" class="content img-fluid"src="img/tlm1.png" alt=""></div>
+      <div class="content1"><img id="fslide5" class="content img-fluid"src="img/mixing.gif" alt=""></div>
 
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-      <br><p style="text-align: center;">(click image for full view)</p>
-    </div>
-    <div id="myModal1" class="modal">
+      <div class="content1"><img id="fslide7" class="content img-fluid"src="img/blackstonesummergiveway.png" alt=""></div>
+      <div class="content1"><img id="fslide8" class="content img-fluid"src="img/btbf flyer.png" alt=""></div>
+
+
+    </div> 
+    
+    <div id="myModal" class="modal">
       <!-- The Close Button -->
       <span class="close">&times;</span>
       <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img02">
+      <img class="modal-content" id="img01">
       <!-- Modal Caption (Image Text) -->
       <div class="caption"></div>
     </div>
-  </header>
-<br>
-  <h2 style="text-align: center;">Background</h2>
-  <div class="carousel-caption2"></div>
-<script>
-    $('#fslide1').click(function(){
-    $('#myModal1').css('display','block');
-    $('#img02').attr("src", "img/blackout.gif");
-    $('.caption').text('"BlackOut First Meeting" February 2020')
+
+  <script>
+$('#fslide1').click(function(){
+    $('#myModal').css('display','block');
+    $('#img01').attr("src", "img/blackout.gif");
+    $('.caption').text('"BlackOut Instagram Promo" March 2020')
  })
  $('#fslide2').click(function(){
-    $('#myModal1').css('display','block');
-    $('#img02').attr("src", "img/yari compcard.jpg");
-    $('.caption').text('"Yahaira Comp Card" October 2019')
+    $('#myModal').css('display','block');
+    $('#img01').attr("src", "img/yari compcard.jpg");
+    $('.caption').text('"Yari Compcard" October 2019')
  })
  $('#fslide3').click(function(){
-    $('#myModal1').css('display','block');
-    $('#img02').attr("src", "img/tshirt-mockup.gif");
-    $('.caption').text('"Lesbian Agenda" November 2019')
+    $('#myModal').css('display','block');
+    $('#img01').attr("src", "img/tshirt-mockup.gif");
+    $('.caption').text('"Lesbian Agenda Shirt Promo" January 2020')
  })
  $('#fslide4').click(function(){
-    $('#myModal1').css('display','block');
-    $('#img02').attr("src", "img/costume party.jpg");
-    $('.caption').text('"Costume Party Flyer" October 2019')
+    $('#myModal').css('display','block');
+    $('#img01').attr("src", "img/tlm1.png");
+    $('.caption').text('"Trans Lives Matter Shirt Promo" July 2020')
  })
  $('#fslide5').click(function(){
-    $('#myModal1').css('display','block');
-    $('#img02').attr("src", "img/mixing.gif");
-    $('.caption').text('"Mixing Club" February 2020')
+    $('#myModal').css('display','block');
+    $('#img01').attr("src", "img/mixing.gif");
+    $('.caption').text('"WZLY Mixing Club E-flyer" February 2020')
  })
  $('#fslide6').click(function(){
-    $('#myModal1').css('display','block');
-    $('#img02').attr("src", "img/radioshow.jpg");
-    $('.caption').text('"WZLY Radio Hour" September 2019')
+    $('#myModal').css('display','block');
+    $('#img01').attr("src", "img/mxchainig1.png");
+    $('.caption').text('"MX Chains Split-Post Promo (1/2)" May 2020')
  })
  $('#fslide7').click(function(){
-    $('#myModal1').css('display','block');
-    $('#img02').attr("src", "img/afrovibe spam.jpg");
-    $('.caption').text('"Afro Vibe Flyer" May 2019')
+    $('#myModal').css('display','block');
+    $('#img01').attr("src", "img/blackstonesummergiveway.png");
+    $('.caption').text('"Blackstone Summer Flyer" August 2020')
  })
-//  $('#fslide8').click(function(){
-//     $('#myModal1').css('display','block');
-//     $('#img02').attr("src", "img/tunnel map v1.2.jpg");
-//     $('.caption').text('"Tunnel Map v1.2" January 2019')
-//  })
-
+ $('#fslide8').click(function(){
+    $('#myModal').css('display','block');
+    $('#img01').attr("src", "img/btbf flyer.png");
+    $('.caption').text('"BTBF 1st Giveaway Flyer" September 2020')
+ })
+ $('#fslide9').click(function(){
+    $('#myModal').css('display','block');
+    $('#img01').attr("src", "img/mxchainig2.png");
+    $('.caption').text('MX Chains Split-Post Promo (2/2)" May 2020')
+ })
+ $('#slide10').click(function(){
+    $('#myModal').css('display','block');
+    $('#img01').attr("src", "img/wormluv.jpg");
+    $('.caption').text('"Worm Love" October 2019')
+ })
   $('.close').click(function(){
-    $('#myModal1').css('display','none');
+    $('#myModal').css('display','none');
  })
 </script>
-  <script>
-    window.setInterval(function(){
-      if($("#pslide1").hasClass("carousel-item active")){
-        $('.carousel-caption2').empty();
-        $('.carousel-caption2').text('Rendered as a video, this animation was posted on the organization’s instagram page. Movement from the squirming forms and blinking text, drew the attention of users on the platform. As manager of the instagram account, I took creating the digital flyer as an opportunity to experiment with animation through shifting opacity in Photoshop.');
-      }else if($("#pslide2").hasClass("carousel-item active")){
-        $('.carousel-caption2').empty();
-        $('.carousel-caption2').text('Each photo illustrated was photographed and edited by me in Lightroom, then composed in Photoshop. The dimensions (8.5” x 5.5”) and content follow the standard for modelling comp cards. After considering various compositions and images, The layout showcases the diversity in the model’s expressions and poses. The diagonal synchronicity in the direction seem more dynamic and communicates the model’s ability to angle from both sides of her body.');
-      }else if($("#pslide3").hasClass("carousel-item active")){
-        $('.carousel-caption2').empty();
-        $('.carousel-caption2').text('This piece “The Lesbian Agenda” grew from a propaganda assignment in a Digital Imaging course. Although displayed in digital format here, black ink screen printed onto red Canson paper was the original media. After sizable demand, prints were created using a larger variety of colors for sale, and t-shirts of the design are on sale.');
-      }else if($("#pslide4").hasClass("carousel-item active")){
-        $('.carousel-caption2').empty();
-        $('.carousel-caption2').text('This is one example of the various flyers created for student events. The flashy design and neon colors generate excitement. The mobile flyer paired with a Facebook event optimized attendance.');
-      }else if($("#pslide5").hasClass("carousel-item active")){
-        $('.carousel-caption2').empty();
-        $('.carousel-caption2').text('The aesthetic of this flyer is meant to mirror characteristics of an antiquated digital interface. I was challenged to include a large sum of text in a legible square for instagram. Variation in font size, movement, and color create a visual hierarchy.');
-      }else if($("#pslide6").hasClass("carousel-item active")){
-        $('.carousel-caption2').empty();
-        $('.carousel-caption2').text('This graphic is meant for social media to promote my college radio show. “Swearing Time” refers to the reduction in FCC regulations after 10 pm. The colorful self portrait responds to the luminosity of the yellow text creating depth. ');  
-      }else if($("#pslide7").hasClass("carousel-item active")){
-        $('.carousel-caption2').empty();
-        $('.carousel-caption2').text('Created for Wellesley’s French Department, this flyer was my first experience creating publicity content for an organization. Since the flyer was not created for online event sign up, more details were required. I used various methods to prioritize information: font weight, shadow, font color, and shapes. My favorite aspect of the flyer is the workshop leader’s figure, her leaping pose brings movement to the composition. This final product was printed for posters and projected on screens across campus.');
-      }else if($("#pslide8").hasClass("carousel-item active")){
-        $('.carousel-caption2').empty();
-        $('.carousel-caption2').text('As my sole  mapping project, “Tunnels of Wellesley” was created as a detailed and comprehensive map of Wellesley’s underground passage-ways. By cross referencing a geographic map of Wellesley with my sketches of the tunnel paths, the outline for the map was designed.');
-    }})
+
   </script>
-  
+
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
