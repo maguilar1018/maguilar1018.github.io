@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Maxine Aguilar">
+
+  <title>Maxine Aguilar</title>
+
+  <!--Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body id="page-top" style="background: white;background-attachment: fixed;">
+
+<!-- style="background: linear-gradient(to right bottom, #0088cc, #fff200);background-attachment: fixed;"> -->
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <a class="navbar-brand" href="#">
+      <!-- put logo here<img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""> -->
+    </a>
+    <button class="navbar-toggler menu-toggle rounded " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+      <!-- <span class="navbar-toggler-icon"></span> -->
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Work
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="photo1.html">Acerca de Tierras Morenas</a>
+            <a class="dropdown-item" href="exhibition1.html">Belonging Exhibition</a>
+            <a class="dropdown-item" href="printpaint.html">Printmaking and Painting</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Portfolios
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://mxdux.cargo.site/" target="_blank" rel="noopener noreferrer">UX/UI</a>
+            <a class="dropdown-item" href="https://amaxine1018.myportfolio.com/" target="_blank" rel="noopener noreferrer">Graphic Design</a>
+            <!-- <a class="dropdown-item" href="programming.html">Front End Dev</a> -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="archive.html">Archive</a>
+        </li>     
+      </ul>
+    </div>
+  </nav>
+
+
+<margin></margin>
+  <div style="padding-top: 40px;"class="content-section-heading text-center">
+    <h2 >Printmaking and Paintings</h2>
+    <p class="lead mb-5 font1"style="margin-bottom: 2em;">Selected works from my personal practice and commisions.</div>
+        <!-- <h5 style="padding-left: 40px;">Project Statement</h5> -->
+        <!-- <p style="padding-left: 40px; padding-top: 20px;"class="lead mb-5 font1">Maxine is pursuing their undergraduate degree in Media Arts and Sciences, an interdisciplinary major combining visual arts and computer science, at Wellesley College. Their interest began in mechanical engineering which led to learning more about simple machines. Not coincidentally, volunteering at a local bike shop exposed them to bicycle mechanics. Soon enough, they advanced and became a professional bike mechanic. -->
+                      </p>
+    <div class="gallery" id="gallery">
+        <!-- <script>
+            //for each img in folder
+            //write src of dom. id fslide x
+        </script> -->
+      <div class="content1"><img id="fslide6" class="content img-fluid"src="img/gargola.jpg" alt=""></div>
+      <div class="content1"><img id="fslide8" class="content img-fluid"src="img/serenity.jpg" alt=""></div>
+      <div class="content1"><img id="fslide2" class="content img-fluid"src="img/mxprint.jpg" alt=""></div>
+<!-- 
+      <div class="content1"><img id="fslide1" class="content img-fluid"src="img/yaripaint.jpg" alt=""></div>
+      <div class="content1"><img id="fslide3" class="content img-fluid"src="img/sael.jpg" alt=""></div> -->
+
+      <div class="content1"><img id="fslide4" class="content img-fluid"src="img/gearinmotion.jpeg" alt=""></div>
+      <div class="content1"><img id="fslide5" class="content img-fluid"src="img/prof.jpeg" alt=""></div>
+
+    </div> 
+    
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+      <!-- Modal Caption (Image Text) -->
+      <div class="caption"></div>
+    </div>
+
+<script>
+  $('#fslide1').click(function(){
+      $('#myModal').css('display','block');
+      $('#img01').attr("src", "img/yaripaint.jpg");
+      $('.caption').text()
+  })
+  $('#fslide2').click(function(){
+      $('#myModal').css('display','block');
+      $('#img01').attr("src", "img/mxprint.jpg");
+      $('.caption').text("2021")
+  })
+  $('#fslide3').click(function(){
+      $('#myModal').css('display','block');
+      $('#img01').attr("src", "img/sael.jpg" );
+      $('.caption').text()
+  })
+  $('#fslide4').click(function(){
+      $('#myModal').css('display','block');
+      $('#img01').attr("src", "img/gearinmotion.jpeg");
+      $('.caption').text("2021")
+  })
+  $('#fslide5').click(function(){
+      $('#myModal').css('display','block');
+      $('#img01').attr("src", "img/prof.jpeg");
+      $('.caption').text('')
+  })
+  $('#fslide6').click(function(){
+      $('#myModal').css('display','block');
+      $('#img01').attr("src", "img/gargola.jpg");
+      $('.caption').text('2021')
+  })
+  $('#fslide7').click(function(){
+      $('#myModal').css('display','block');
+      $('#img01').attr("src", "img/blackstonesummergiveway.png");
+      $('.caption').text('"Blackstone Summer Flyer" August 2020')
+  })
+  $('#fslide8').click(function(){
+      $('#myModal').css('display','block');
+      $('#img01').attr("src", "img/serenity.jpg");
+      $('.caption').text('Commision, 2023')
+  })
+  $('#fslide9').click(function(){
+      $('#myModal').css('display','block');
+      $('#img01').attr("src", "img/mxchainig2.png");
+      $('.caption').text('MX Chains Split-Post Promo (2/2)" May 2020')
+  })
+  $('#slide10').click(function(){
+      $('#myModal').css('display','block');
+      $('#img01').attr("src", "img/wormluv.jpg");
+      $('.caption').text('"Worm Love" October 2019')
+  })
+    $('.close').click(function(){
+      $('#myModal').css('display','none');
+  })
+</script>
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/maguilar1018/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/maxxisdigital">
+            <i class="icon-social-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Aguilar 2023</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!--core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts-->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+</html>
